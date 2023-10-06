@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", () => {
 document.addEventListener("DOMContentLoaded", () => {
     const pointTable = document.getElementById("polygonTable").getElementsByTagName('tbody')[0];
 
-    fetch("https://raw.githubusercontent.com/dezhamartha17/dezhamartha17.github.io/js/data.json") // Ganti "data.json" dengan nama file JSON Anda
+    fetch("polygon.json") // Ganti "data.json" dengan nama file JSON Anda
         .then(response => response.json())
         .then(data => {
             data.features.forEach(feature => {
@@ -75,7 +75,7 @@ import { Vector as VectorLayer } from 'https://cdn.skypack.dev/ol/layer.js';
 import GeoJSON from 'https://cdn.skypack.dev/ol/format/GeoJSON.js';
 
 // Definisikan URL GeoJSON untuk masing-masing jenis fitur
-const polygonGeoJSONUrl = 'https://raw.githubusercontent.com/dezhamartha17/dezhamartha17.github.io/js/data.json';
+const polygonGeoJSONUrl = 'polygon.json';
 const lineStringGeoJSONUrl = 'polyline.json';
 const pointGeoJSONUrl = 'point.json';
 
