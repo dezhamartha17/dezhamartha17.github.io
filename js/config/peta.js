@@ -9,7 +9,7 @@ import {container} from 'https://jscroot.github.io/element/croot.js';
 
 const attributions = '';
 
-const place = [100.52918384551631,-0.12067494194397667];
+const place = [100.5438060616529,-0.13037085621314898, ];
 
 export let idmarker = {id:1};
 
@@ -19,7 +19,7 @@ const basemap = new TileLayer({
 
 const defaultstartmap = new View({
   center: fromLonLat(place),
-  zoom: 17,
+  zoom: 15,
 });
 
 export const overlay = new Overlay({
