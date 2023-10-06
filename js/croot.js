@@ -7,7 +7,7 @@ import {getAllCoordinates} from './controller/cog.js';
 document.addEventListener("DOMContentLoaded", () => {
     const pointTable = document.getElementById("pointTable").getElementsByTagName('tbody')[0];
 
-    fetch("https://raw.githubusercontent.com/dezhamartha17/dezhamartha17.github.io/js/data.json") // Ganti "data.json" dengan nama file JSON Anda
+    fetch("point.json") // Ganti "data.json" dengan nama file JSON Anda
         .then(response => response.json())
         .then(data => {
             data.features.forEach(feature => {
