@@ -77,7 +77,7 @@ import GeoJSON from 'https://cdn.skypack.dev/ol/format/GeoJSON.js';
 // Definisikan URL GeoJSON untuk masing-masing jenis fitur
 const polygonGeoJSONUrl = 'https://raw.githubusercontent.com/dezhamartha17/dezhamartha17.github.io/js/data.json';
 const lineStringGeoJSONUrl = 'https://raw.githubusercontent.com/dezhamartha17/dezhamartha17.github.io/js/data.json';
-const pointGeoJSONUrl = 'https://raw.githubusercontent.com/dezhamartha17/dezhamartha17.github.io/js/data.json';
+const pointGeoJSONUrl = 'point.json';
 
 // Buat sumber vektor dan lapisan vektor untuk masing-masing jenis fitur
 const polygonSource = new VectorSource({
