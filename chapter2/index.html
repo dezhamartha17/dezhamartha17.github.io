@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Peta Pedia Indonesia</title>
+	<link rel="stylesheet" href="./css/style.css" type="text/css" />
+    <link rel="stylesheet" href="https://openlayers.org/en/v4.6.5/css/ol.css" type="text/css">
+</head>
+<body>
+    <h1><center>Geographic Information System (OpenLayers)<center></h1>
+    <h3><center>Nama : Dezha Aidil Martha</center></h3>
+    <h3><center>NPM : 1174025</center></h3>  
+    <div id="map" class="map"></div>
+<!-- tabel -->
+<div class="point-table">
+    <h1>Point</h1>
+    <table id="pointTable" border="1">
+        <thead>
+            <tr>
+                <th>Nama</th>
+                <th>Koordinat</th>
+                <th>Tipe</th>
+            </tr>
+        </thead>
+        <tbody id="point"></tbody>
+    </table>
+</div>
+
+<div class="polygon-table">
+    <h1>Polygon</h1>
+    <table id="polygonTable" border="1">
+        <thead>
+            <tr>
+                <th>Nama</th>
+                <th>Koordinat</th>
+                <th>Tipe</th>
+            </tr>
+        </thead>
+        <tbody id="polygon"></tbody>
+    </table>
+</div>
+
+<div class="polyline-table">
+    <h1>Polyline</h1>
+    <table id="polylineTable" border="1">
+        <thead>
+            <tr>
+                <th>Nama</th>
+                <th>Koordinat</th>
+                <th>Tipe</th>
+            </tr>
+        </thead>
+        <tbody id="line"></tbody>
+    </table>
+</div>
+
+<script src="https://openlayers.org/en/v4.6.5/build/ol.js"></script>
+<script src="js/croot.js" type="module"></script>
+</body>
+</html>
