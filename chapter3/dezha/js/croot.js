@@ -7,7 +7,7 @@ import {getAllCoordinates} from './controller/cog.js';
 document.addEventListener("DOMContentLoaded", () => {
     const pointTable = document.getElementById("pointTable").getElementsByTagName('tbody')[0];
 
-    fetch("point.json") // Ganti "data.json" dengan nama file JSON Anda
+    fetch("https://raw.githubusercontent.com/dezhamartha17/dezhamartha17.github.io/main/chapter2/point.json") // Ganti "data.json" dengan nama file JSON Anda
         .then(response => response.json())
         .then(data => {
             data.features.forEach(feature => {
@@ -77,7 +77,7 @@ import GeoJSON from 'https://cdn.skypack.dev/ol/format/GeoJSON.js';
 // Definisikan URL GeoJSON untuk masing-masing jenis fitur
 const polygonGeoJSONUrl = 'polygon.json';
 const lineStringGeoJSONUrl = 'polyline.json';
-const pointGeoJSONUrl = 'point.json';
+const pointGeoJSONUrl = 'https://raw.githubusercontent.com/dezhamartha17/dezhamartha17.github.io/main/chapter2/point.json';
 
 // Buat sumber vektor dan lapisan vektor untuk masing-masing jenis fitur
 const polygonSource = new VectorSource({
