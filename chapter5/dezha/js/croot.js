@@ -7,7 +7,11 @@ import {getAllCoordinates} from './controller/cog.js';
 document.addEventListener("DOMContentLoaded", () => {
     const pointTable = document.getElementById("pointTable").getElementsByTagName('tbody')[0];
 
+<<<<<<< HEAD
     fetch("https://raw.githubusercontent.com/dezhamartha17/dezhamartha17.github.io/main/chapter3/dezha/point.json") // Ganti "data.json" dengan nama file JSON Anda
+=======
+    fetch("point.json") // Ganti "data.json" dengan nama file JSON Anda
+>>>>>>> 4a0fec665e57c0d817e5a4442513a3e887217647
         .then(response => response.json())
         .then(data => {
             data.features.forEach(feature => {
@@ -29,7 +33,11 @@ document.addEventListener("DOMContentLoaded", () => {
 document.addEventListener("DOMContentLoaded", () => {
     const pointTable = document.getElementById("polygonTable").getElementsByTagName('tbody')[0];
 
+<<<<<<< HEAD
     fetch("https://raw.githubusercontent.com/dezhamartha17/dezhamartha17.github.io/main/chapter3/dezha/polygon.json") // Ganti "data.json" dengan nama file JSON Anda
+=======
+    fetch("polygon.json") // Ganti "data.json" dengan nama file JSON Anda
+>>>>>>> 4a0fec665e57c0d817e5a4442513a3e887217647
         .then(response => response.json())
         .then(data => {
             data.features.forEach(feature => {
@@ -51,7 +59,11 @@ document.addEventListener("DOMContentLoaded", () => {
 document.addEventListener("DOMContentLoaded", () => {
     const pointTable = document.getElementById("polylineTable").getElementsByTagName('tbody')[0];
 
+<<<<<<< HEAD
     fetch("https://raw.githubusercontent.com/dezhamartha17/dezhamartha17.github.io/main/chapter3/dezha/polyline.json") // Ganti "data.json" dengan nama file JSON Anda
+=======
+    fetch("polyline.json") // Ganti "data.json" dengan nama file JSON Anda
+>>>>>>> 4a0fec665e57c0d817e5a4442513a3e887217647
         .then(response => response.json())
         .then(data => {
             data.features.forEach(feature => {
@@ -75,9 +87,15 @@ import { Vector as VectorLayer } from 'https://cdn.skypack.dev/ol/layer.js';
 import GeoJSON from 'https://cdn.skypack.dev/ol/format/GeoJSON.js';
 
 // Definisikan URL GeoJSON untuk masing-masing jenis fitur
+<<<<<<< HEAD
 const polygonGeoJSONUrl = 'https://raw.githubusercontent.com/dezhamartha17/dezhamartha17.github.io/main/chapter3/dezha/polygon.json';
 const lineStringGeoJSONUrl = 'https://raw.githubusercontent.com/dezhamartha17/dezhamartha17.github.io/main/chapter3/dezha/polyline.json';
 const pointGeoJSONUrl = 'https://raw.githubusercontent.com/dezhamartha17/dezhamartha17.github.io/main/chapter3/dezha/point.json';
+=======
+const polygonGeoJSONUrl = 'polygon.json';
+const lineStringGeoJSONUrl = 'polyline.json';
+const pointGeoJSONUrl = 'point.json';
+>>>>>>> 4a0fec665e57c0d817e5a4442513a3e887217647
 
 // Buat sumber vektor dan lapisan vektor untuk masing-masing jenis fitur
 const polygonSource = new VectorSource({
